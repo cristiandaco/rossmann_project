@@ -1,7 +1,7 @@
 # Projeto Rossmann
 
 ## Metodologia
-O método CRISP-DS foi o método empregado no desevolvimento do projeto. No que consiste o método CRISP-DS? - Chamado Cross Industry Process - Data Science, o método CRISP-DS é um método cíclico de desenvolvimento, ou seja, ele possui etapas bem definidas que formam um cíclo, isso significa que para desenvolver o projeto o desenvolvedor deve passar várias vezes pelas mesmas tarefas. Vantagens do método CRISP-DS: com um cíclo completo o desenvolverdor consegue entregar uma versão da solução End-to-End com mais velocidade em comparação com o método linear, além do mapeamento de possíveis problemas.
+O método CRISP-DS foi o método empregado no desevolvimento do projeto. No que consiste o método CRISP-DS? - Chamado Cross Industry Process - Data Science, o método CRISP-DS é um método cíclico de desenvolvimento, ou seja, ele possui etapas bem definidas que formam um cíclo, isso significa que para desenvolver o projeto o desenvolvedor deve passar várias vezes pelas mesmas tarefas. Vantagens do método CRISP-DS: com um cíclo completo o desenvolverdor consegue entregar uma versão da solução End-to-End com mais velocidade em comparação com o método linear, além do mapeamento de possíveis problemasa serem resolvidos no próximo ciclo.
 
 ## Estrutura do projeto:
 
@@ -31,4 +31,58 @@ O método CRISP-DS foi o método empregado no desevolvimento do projeto. No que 
 ## Hipóteses ( geração de insights )
 
 H1) Lojas com maior sortimento de produtos deveriam vender mais.
-**FALSA. Lojas com maior sortimento vendem MENOS**.
+**FALSA. Lojas com maior sortimento vendem MENOS.**
+
+H2) Lojas com competidores mais próximos deveriam vender menos.
+**FALSA. Quanto maior a distancia dos competidores MENOR a venda.**
+
+H3) Lojas com competidores a mais tempo deveriam vender mais.
+**Falsa. Lojas com competidores a mais tempo vendem MENOS.**
+
+H4) Lojas com promoções ativas por mais tempo deveriam vender mais.
+**FALSA. Lojas com promoção ativa por mais tempo vendem MENOS, depois de um determinado período.**
+
+H6) Lojas com mais promoções consecutivas deveriam vender mais.
+**FALSA. Lojas com mais promoções consecutivas vendem MENOS.**
+
+H7) Lojas abertas durante o feriado de Natal deveriam vender mais.
+**VERDADEIRO. Lojas abertas durante o feriado de Natal vendem mais, em média.**
+
+H8) Lojas deveriam vender mais ao longo dos anos.
+**FALSA Lojas Vendem MENOS ao longo dos anos**
+
+H9) Lojas deveriam vender mais durante o segundo semestre do ano.
+**VERDADEIRO. Lojas vendem, em média, 4,62% a mais no segundo semestre.**
+
+H10) Lojas deveriam vender mais antes do dia 10 de cada mês.
+**VERDADEIRO. Em média, lojas vendem 7,08% a mais antes do 10 dia de cada mês.**
+
+H11) Lojas deveriam vender menos durante os finais de semana.
+**VERDADEIRO. Lojas vendem, em média, MENOS durante os finais de semana.**
+
+H12) Lojas deveriam vender menos nos feriados escolares
+**VERDADEIRO. Lojas vendem menos nos feriados escolares, exceto no mes de Agosto.**
+
+## Resultados financeiros
+- Qual é a previsão de vendas das lojas da Rossmann?
+
+O resultado para as 1115 lojas da Rossmann que solicitaram a previsão de vendas, é que cada uma delas, em média, venda U$ 255.353,23 nas próximas 6 semanas. Valor que varia de U$ 95.360,91 a U$ 836.160,87 da loja que deve ter menor receita para loja que deve ter maior receita. O erro do modelo ficou em 13,3%, ou seja, na média o modelo erra a previsão 13,3% para cima ou para baixo do valor real. Abaixo gráfico com o desempenho do modelo: valor real de vendas em comparação com a previsão.
+
+![error_prev](https://user-images.githubusercontent.com/81040797/142909769-b8528c11-55df-4d54-a8dd-d05b636a6d65.png)
+
+## Conlusão
+- O objetivo foi alcançado? Sim? Não? Por que?
+
+Baseado na metodologia de desenvolvimento de projetos CRISP-DS, que prevê ciclos de iteração para otimização dos projetos, após a solicitação do CFO da Rossmann, foi possível entregar o primeiro ciclo de desenvolvimento com bons resultados.
+
+## Próximos passos
+- O que pode ser melhorado?
+
+Durante o primeiro ciclo de iterações já foi possível observar razoáveis pontos de melhoria dos resultados. Na seção 7.0., que aborda os modelos de machine learning, como a variável resposta não é linear, é possícel ao utilizar, nos próximos ciclos, algoritmos de ML mais complexos como SVM e Redes Neurais, obter erro menor do que o erro entregue pelo algoritmo XGBoost. Na subseção 8.1., seção 8.0. onde é abordado o ajuste fino dos parâmetros, com a utilização da otimização bayseana, que exige maior capaciadade computacional, mas que seleciona os parâmetros até que os melhores sejam encontrados, também é possível obter erro menor do que o obtido com utilização do método Random Search. Por fim, uma das premissas assumidas diz que "Com milhares de requisições de Gerentes de Lojas basedas nas suas próprias circunstâncias, a acurácia do resultado pode ser variada para cada uma das lojas". Com essa premissa assumida, é razóvel que ao analizar as lojas, que obtiveram erro maior, de forma indivídual se obtenha resultados de negócio mais vantajosos do que analiza-lás em conjunto com as demais.
+
+
+|
+Cristian Oliveira
+
+|
+cris.oliveira.95@hotmail.com
