@@ -1,7 +1,7 @@
 # Projeto Rossmann
 
 ## Metodologia
-O método CRISP-DS foi o método empregado no desevolvimento do projeto. No que consiste o método CRISP-DS? - Chamado Cross Industry Process - Data Science, o método CRISP-DS é um método cíclico de desenvolvimento, ou seja, ele possui etapas bem definidas que formam um cíclo, isso significa que para desenvolver o projeto o desenvolvedor deve passar várias vezes pelas mesmas tarefas. Vantagens do método CRISP-DS: com um cíclo completo o desenvolverdor consegue entregar uma versão da solução End-to-End com mais velocidade em comparação com o método linear, além do mapeamento de possíveis problemasa serem resolvidos no próximo ciclo.
+O método CRISP-DS foi o método empregado no desevolvimento do projeto. No que consiste o método CRISP-DS? - Chamado Cross Industry Process - Data Science, o método CRISP-DS é um método cíclico de desenvolvimento, ou seja, ele possui etapas bem definidas que formam um cíclo, isso significa que para desenvolver o projeto o desenvolvedor deve passar várias vezes pelas mesmas tarefas. Vantagens do método CRISP-DS: com um cíclo completo o desenvolverdor consegue entregar uma versão da solução End-to-End com mais velocidade em comparação com o método linear, além de poder mapear os possíveis problemas a serem resolvidos no próximo ciclo.
 
 ## Estrutura do projeto:
 
@@ -11,7 +11,7 @@ O método CRISP-DS foi o método empregado no desevolvimento do projeto. No que 
 4. Análise exploratória de dados ( geração de insights );
 5. Preparação dos dados;
 6. Seleção de variáveis;
-7. Implementação de Machine Learning;
+7. Implementação de algoritmos de Machine Learning;
 8. Hiperparameter fine tunning;
 9. Interpretação e tradução do erro do modelo;
 10. Deploy do modelo em produção.
@@ -73,12 +73,12 @@ O resultado para as 1115 lojas da Rossmann que solicitaram a previsão de vendas
 ## Conlusão
 - O objetivo foi alcançado? Sim? Não? Por que?
 
-Baseado na metodologia de desenvolvimento de projetos CRISP-DS, que prevê ciclos de iteração para otimização dos projetos, após a solicitação do CFO da Rossmann, foi possível entregar o primeiro ciclo de desenvolvimento com bons resultados.
+Sim. Baseado na metodologia de desenvolvimento de projetos CRISP-DS, que prevê ciclos de iteração para otimização dos projetos, após a solicitação do CFO da Rossmann, foi possível entregar o primeiro ciclo de desenvolvimento com bons resultados.
 
 ## Próximos passos
 - O que pode ser melhorado?
 
-Durante o primeiro ciclo de iterações já foi possível observar razoáveis pontos de melhoria dos resultados. Na seção 7.0., que aborda os modelos de machine learning, como a variável resposta não é linear, é possícel ao utilizar, nos próximos ciclos, algoritmos de ML mais complexos como SVM e Redes Neurais, obter erro menor do que o erro entregue pelo algoritmo XGBoost. Na subseção 8.1., seção 8.0. onde é abordado o ajuste fino dos parâmetros, com a utilização da otimização bayseana, que exige maior capaciadade computacional, mas que seleciona os parâmetros até que os melhores sejam encontrados, também é possível obter erro menor do que o obtido com utilização do método Random Search. Por fim, uma das premissas assumidas diz que "Com milhares de requisições de Gerentes de Lojas basedas nas suas próprias circunstâncias, a acurácia do resultado pode ser variada para cada uma das lojas". Com essa premissa assumida, é razóvel que ao analizar as lojas, que obtiveram erro maior, de forma indivídual se obtenha resultados de negócio mais vantajosos do que analiza-lás em conjunto com as demais.
+Durante o primeiro ciclo de iterações já foi possível observar razoáveis pontos de melhoria dos resultados. Na seção 7.0., que aborda os modelos de machine learning, como a variável resposta não é linear, é possícel ao utilizar, nos próximos ciclos, algoritmos de ML mais complexos como SVM e Redes Neurais, obter erro menor do que o erro entregue pelo algoritmo XGBoost. Na subseção 8.1., seção 8.0. onde é abordado o ajuste fino dos parâmetros, com a utilização da otimização bayseana, que exige maior capaciadade computacional, mas que seleciona os parâmetros até que os melhores sejam encontrados, também é possível obter erro menor do que o obtido com utilização do método Random Search. Por fim, uma das premissas assumidas diz que "Com milhares de requisições de Gerentes de Lojas basedas nas suas próprias circunstâncias, a acurácia do resultado pode ser variada para cada uma das lojas". Com essa premissa assumida, é razóvel que ao analizar as lojas, que obtiveram erro maior, de forma indivídual se obtenha resultados de negócio mais vantajosos do que analisá-las em conjunto com as demais.
 
 
 |
