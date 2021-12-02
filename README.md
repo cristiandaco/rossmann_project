@@ -1,7 +1,11 @@
 # Projeto Rossmann
 
-## Metodologia
-O método CRISP-DS foi o método empregado no desevolvimento do projeto. No que consiste o método CRISP-DS? - Chamado Cross Industry Process - Data Science, o método CRISP-DS é um método cíclico de desenvolvimento, ou seja, ele possui etapas bem definidas que formam um cíclo, isso significa que para desenvolver o projeto o desenvolvedor deve passar várias vezes pelas mesmas tarefas. Vantagens do método CRISP-DS: com um cíclo completo o desenvolverdor consegue entregar uma versão da solução End-to-End com mais velocidade em comparação com o método linear, além de poder mapear os possíveis problemas a serem resolvidos no próximo ciclo.
+## Contexto do problema de negócio
+
+" A Rossmann é uma rede de farmácias com mais de 3000 lojas em 7 países da Europa. O CFO da Rossmann fez uma reunião com todos os Gerentes de Loja e pediu para que cada um deles trouxesse uma previsão diária das próximas 6 semanas de vendas. Depois dessa reunião os gerentes de loja entraram em contato com time de Data Science e requisitaram uma previsão de vendas de suas lojas. "
+
+
+![rossmann_image](https://user-images.githubusercontent.com/81040797/142878319-7fe521ec-5b81-4eb5-96fe-e00e0bb471a0.jpg)
 
 ## Estrutura do projeto:
 
@@ -15,14 +19,6 @@ O método CRISP-DS foi o método empregado no desevolvimento do projeto. No que 
 8. Hiperparameter fine tunning;
 9. Interpretação e tradução do erro do modelo;
 10. Deploy do modelo em produção.
-
-## Contexto do problema de negócio
-
-" A Rossmann é uma rede de farmácias com mais de 3000 lojas em 7 países da Europa. O CFO da Rossmann fez uma reunião com todos os Gerentes de Loja e pediu para que cada um deles trouxesse uma previsão diária das próximas 6 semanas de vendas. Depois dessa reunião os gerentes de loja entraram em contato com time de Data Science e requisitaram uma previsão de vendas de suas lojas. "
-
-
-![rossmann_image](https://user-images.githubusercontent.com/81040797/142878319-7fe521ec-5b81-4eb5-96fe-e00e0bb471a0.jpg)
-
 ## Premissas assumidas
 
 - As vendas das lojas são influenciadas por vários fatores, incluindo competição, promoções, feriados escolares e estaduais, sazonalidade e localidade.
