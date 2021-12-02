@@ -63,12 +63,29 @@ H11) Lojas deveriam vender menos durante os finais de semana.
 H12) Lojas deveriam vender menos nos feriados escolares
 **VERDADEIRO. Lojas vendem menos nos feriados escolares, exceto no mes de Agosto.**
 
+## Machine Learning Performance:
+![image](https://user-images.githubusercontent.com/81040797/144332294-f8fa0593-78ca-478f-8af5-0980ae372c33.png)
+
+## Cross Validation
+
+![image](https://user-images.githubusercontent.com/81040797/144333214-6e86dc79-af00-4868-a015-3febba0758ef.png)
+
+Apesar do modelo Random Forest apresentar resultados ligeiramente melhores do que o os resultados obtidos com XGBoost, o modelo escolhido para ir para produção foi o modelo desenvolvido com base no XGBoost. Pareceu mais razoável utilizar um modelo mais simples, como o XGBoost, com exigçência computacional mais baixa em comparação ao Random Forest, 
+mas que entrega resultados muito próximos dos resultados do modelo mais complexo.
+
+Desempenho do modelo, graficamente:
+
+![error_prev](https://user-images.githubusercontent.com/81040797/142909769-b8528c11-55df-4d54-a8dd-d05b636a6d65.png)
+
 ## Resultados financeiros
 - Qual é a previsão de vendas das lojas da Rossmann?
+- ![image](https://user-images.githubusercontent.com/81040797/144333472-a87ef74a-e5ef-49ca-880b-e56f3f920fad.png)
 
 O resultado para as 1115 lojas da Rossmann que solicitaram a previsão de vendas, é que cada uma delas, em média, venda U$ 255.353,23 nas próximas 6 semanas. Valor que varia de U$ 95.360,91 a U$ 836.160,87 da loja que deve ter menor receita para loja que deve ter maior receita. O erro do modelo ficou em 13,3%, ou seja, na média o modelo erra a previsão 13,3% para cima ou para baixo do valor real. Abaixo gráfico com o desempenho do modelo: valor real de vendas em comparação com a previsão.
 
-![error_prev](https://user-images.githubusercontent.com/81040797/142909769-b8528c11-55df-4d54-a8dd-d05b636a6d65.png)
+Expectativa de receita:
+
+![image](https://user-images.githubusercontent.com/81040797/144333514-b31db814-8f2d-454b-9dad-e519c3c86cfa.png)
 
 ## Conlusão
 - O objetivo foi alcançado? Sim? Não? Por que?
